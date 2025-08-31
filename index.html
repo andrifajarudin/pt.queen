@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT. Queen Natasya Mandiri - Membangun Masa Depan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="https://ik.imagekit.io/16sy68ze3/PT.%20Queen.png?updatedAt=" alt="PT. Queen Natasya Mandiri" onerror="this.style.display='none'; this.parentElement.innerHTML='PT. QUEEN NATASYA MANDIRI'; this.parentElement.style.fontFamily='Montserrat, sans-serif'; this.parentElement.style.fontWeight='800'; this.parentElement.style.fontSize='1.2rem'; this.parentElement.style.color='white'; this.parentElement.style.textTransform='uppercase'; this.parentElement.style.letterSpacing='1px';">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#proyek">Proyek</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+            <a href="#kontak" class="cta-button">Konsultasi Gratis</a>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </nav>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#beranda" onclick="closeMobileMenu()">Beranda</a></li>
+                <li><a href="#layanan" onclick="closeMobileMenu()">Layanan</a></li>
+                <li><a href="#proyek" onclick="closeMobileMenu()">Proyek</a></li>
+                <li><a href="#tentang" onclick="closeMobileMenu()">Tentang</a></li>
+                <li><a href="#kontak" onclick="closeMobileMenu()">Kontak</a></li>
+            </ul>
+            <div class="mobile-cta">
+                <a href="#kontak" class="cta-button" onclick="closeMobileMenu()">Konsultasi Gratis</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="beranda">
+        <div class="hero-slideshow">
+            <div class="hero-slide hero-slide-1 active"></div>
+            <div class="hero-slide hero-slide-2"></div>
+            <div class="hero-slide hero-slide-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>MEMBANGUN VISI ANDA MENJADI KENYATAAN.</h1>
+                <p>Spesialis konstruksi komersial dan industrial dengan rekam jejak terbukti.</p>
+                <div class="hero-buttons">
+                    <a href="#proyek" class="cta-button">LIHAT PROYEK KAMI</a>
+                </div>
+            </div>
+        </div>
+        <button class="hero-nav prev" onclick="prevSlide()">‹</button>
+        <button class="hero-nav next" onclick="nextSlideManual()">›</button>
+        <div class="hero-dots">
+            <div class="hero-dot active" onclick="currentSlide(1)"></div>
+            <div class="hero-dot" onclick="currentSlide(2)"></div>
+            <div class="hero-dot" onclick="currentSlide(3)"></div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="layanan">
+        <div class="container">
+            <h2 class="section-title">LAYANAN KAMI</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="50" height="50" fill="#0A2342" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3>Konstruksi Komersial</h3>
+                    <p>Pembangunan gedung perkantoran, pusat perbelanjaan, dan fasilitas komersial dengan standar internasional dan teknologi terdepan.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="50" height="50" fill="#0A2342" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                        </svg>
+                    </div>
+                    <h3>Bangun Residensial</h3>
+                    <p>Konstruksi hunian berkualitas tinggi mulai dari rumah tinggal hingga kompleks apartemen dengan desain modern dan fungsional.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="50" height="50" fill="#0A2342" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </div>
+                    <h3>Manajemen Proyek</h3>
+                    <p>Pengelolaan proyek konstruksi profesional dari perencanaan hingga serah terima dengan sistem monitoring terintegrasi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>150+</h3>
+                    <p>Proyek Selesai</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15</h3>
+                    <p>Tahun Pengalaman</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Kepuasan Klien</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Tim Profesional</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="tentang">
+        <div class="container">
+            <h2 class="section-title">TENTANG KAMI</h2>
+            <div class="about-content">
+                <div class="about-intro">
+                    <div class="about-text">
+                        <h3>PT. QUEEN NATASYA MANDIRI</h3>
+                        <p class="about-description">
+                            PT. Queen Natasya Mandiri adalah Perseroan komanditer yang dimiliki sepenuhnya oleh pengusaha lokal. 
+                            Perseroan berdiri sejak tanggal <strong>26 Oktober 2010</strong> berdasarkan akta Notaris Syahirul Alim, SH, MH, Nomor 15.
+                        </p>
+                        <p class="about-description">
+                            Sesuai akta pendiriannya, Perseroan bergerak pada bidang konstruksi dan pengadaan barang dan jasa pendukung 
+                            kegiatan produksi. Bidang usaha yang ditangani Perseroan ini merupakan kompetensi Perseroan dan didukung oleh 
+                            Tim Manajemen yang mempunyai pengalaman, kompetensi, dan dedikasi di bidang tersebut.
+                        </p>
+                    </div>
+                    <div class="about-visual">
+                        <div class="about-image">
+                            <svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="300" height="200" fill="#0A2342" rx="12"/>
+                                <rect x="20" y="20" width="260" height="160" fill="#1a3a5c" rx="8"/>
+                                <rect x="40" y="40" width="220" height="120" fill="#2a4a6c" rx="4"/>
+                                <circle cx="150" cy="100" r="30" fill="#FF6700"/>
+                                <rect x="60" y="130" width="180" height="4" fill="#FF6700" rx="2"/>
+                                <rect x="80" y="140" width="140" height="3" fill="rgba(255,255,255,0.6)" rx="1.5"/>
+                                <rect x="100" y="148" width="100" height="3" fill="rgba(255,255,255,0.4)" rx="1.5"/>
+                                <g fill="rgba(255,255,255,0.3)">
+                                    <rect x="60" y="60" width="15" height="20" rx="2"/>
+                                    <rect x="80" y="60" width="15" height="20" rx="2"/>
+                                    <rect x="100" y="60" width="15" height="20" rx="2"/>
+                                    <rect x="185" y="60" width="15" height="20" rx="2"/>
+                                    <rect x="205" y="60" width="15" height="20" rx="2"/>
+                                    <rect x="225" y="60" width="15" height="20" rx="2"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="about-stats-mini">
+                            <div class="mini-stat">
+                                <span class="mini-number">2010</span>
+                                <span class="mini-label">Didirikan</span>
+                            </div>
+                            <div class="mini-stat">
+                                <span class="mini-number">14+</span>
+                                <span class="mini-label">Tahun</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-mission">
+                    <h4>VISI & MISI PERUSAHAAN</h4>
+                    <p class="mission-intro">Perusahaan ini didasari kesadaran untuk:</p>
+                    <div class="mission-points">
+                        <div class="mission-point">
+                            <div class="mission-icon">
+                                <svg width="40" height="40" fill="#FF6700" viewBox="0 0 24 24">
+                                    <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"/>
+                                </svg>
+                            </div>
+                            <div class="mission-text">
+                                <h5>Mitra Usaha Terpercaya</h5>
+                                <p>Menjadi mitra usaha industri dengan pelayanan yang terbaik dalam rangka memberikan dukungan dalam upaya-upaya peningkatan efisiensi dan produktivitas industri/dunia usaha.</p>
+                            </div>
+                        </div>
+                        <div class="mission-point">
+                            <div class="mission-icon">
+                                <svg width="40" height="40" fill="#FF6700" viewBox="0 0 24 24">
+                                    <path d="M16 4C18.2 4 20 5.8 20 8C20 10.2 18.2 12 16 12C13.8 12 12 10.2 12 8C12 5.8 13.8 4 16 4ZM8 12C10.2 12 12 13.8 12 16C12 18.2 10.2 20 8 20C5.8 20 4 18.2 4 16C4 13.8 5.8 12 8 12ZM16 14C18.2 14 20 15.8 20 18C20 20.2 18.2 22 16 22C13.8 22 12 20.2 12 18C12 15.8 13.8 14 16 14Z"/>
+                                </svg>
+                            </div>
+                            <div class="mission-text">
+                                <h5>Lingkungan Kerja Berkualitas</h5>
+                                <p>Menumbuhkan dan memupuk suasana kerja yang baik untuk menciptakan produktivitas optimal dan kepuasan kerja bagi seluruh tim.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-values">
+                    <h4>NILAI-NILAI PERUSAHAAN</h4>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg width="50" height="50" fill="#0A2342" viewBox="0 0 24 24">
+                                    <path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1ZM10 17L6 13L7.41 11.59L10 14.17L16.59 7.58L18 9L10 17Z"/>
+                                </svg>
+                            </div>
+                            <h5>Integritas</h5>
+                            <p>Berkomitmen pada kejujuran dan transparansi dalam setiap aspek bisnis</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg width="50" height="50" fill="#0A2342" viewBox="0 0 24 24">
+                                    <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM17 12C17 14.76 14.76 17 12 17S7 14.76 7 12S9.24 7 12 7S17 9.24 17 12ZM12 9C10.34 9 9 10.34 9 12S10.34 15 12 15S15 13.66 15 12S13.66 9 12 9Z"/>
+                                </svg>
+                            </div>
+                            <h5>Kualitas</h5>
+                            <p>Mengutamakan standar kualitas tinggi dalam setiap proyek yang dikerjakan</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg width="50" height="50" fill="#0A2342" viewBox="0 0 24 24">
+                                    <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7.5V9.5L21 9ZM3 9L9 9.5V7.5L3 7V9ZM15 10.5V19L13 18.5V10.5L15 10.5ZM11 10.5V18.5L9 19V10.5L11 10.5Z"/>
+                                </svg>
+                            </div>
+                            <h5>Profesionalisme</h5>
+                            <p>Didukung tim berpengalaman dengan dedikasi tinggi di bidangnya</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-icon">
+                                <svg width="50" height="50" fill="#0A2342" viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7L12 12L22 7L12 2ZM2 17L12 22L22 17M2 12L12 17L22 12"/>
+                                </svg>
+                            </div>
+                            <h5>Inovasi</h5>
+                            <p>Terus mengembangkan solusi konstruksi dengan teknologi terdepan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="proyek">
+        <div class="container">
+            <h2 class="section-title">PROYEK UNGGULAN</h2>
+            <div class="projects-grid">
+                <div class="project-card large">
+                    <div class="project-image project-image-1">
+                        <div class="project-overlay">
+                            <h3>Jakarta Business Center</h3>
+                            <p>Komersial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image project-image-2">
+                        <div class="project-overlay">
+                            <h3>Emerald Residence</h3>
+                            <p>Residensial</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image project-image-3">
+                        <div class="project-overlay">
+                            <h3>Manufacturing Hub</h3>
+                            <p>Industrial</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-cta">
+                <a href="#" class="cta-button">JELAJAHI SEMUA PROYEK</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section class="contact" id="kontak">
+    <div class="container">
+        <h2 class="section-title" style="text-align:center; color:#feffff;">SIAP MEMULAI PROYEK ANDA?</h2>
+        <p style="text-align:center; max-width:600px; margin:0 auto 32px;">
+            Hubungi tim ahli kami untuk konsultasi gratis dan dapatkan solusi konstruksi terbaik untuk kebutuhan Anda.
+        </p>
+        <div class="contact-main" style="display:flex; flex-wrap:wrap; gap:40px; justify-content:center; align-items:stretch;">
+            <div class="contact-details" style="flex:1 1 320px; min-width:280px; max-width:400px; background:#f8f9fa; border-radius:16px; padding:32px 24px; box-shadow:0 2px 16px rgba(0,0,0,0.06);">
+                <div style="margin-bottom:24px;">
+                    <h4 style="margin-bottom:8px; color:#0A2342;">Alamat</h4>
+                    <p style="margin:0; color:#FF6700">Jl. Sudirman No. 123 Jakarta Pusat 10220</p>
+                </div>
+                <div style="margin-bottom:24px;">
+                    <h4 style="margin-bottom:8px; color:#0A2342;">Telepon / WhatsApp</h4>
+                    <p style="margin:0;">
+                        <a href="tel:+622112345678" style="color:#FF6700; text-decoration:none;">+62 21 1234 5678</a><br>
+                        <a href="https://wa.me/6281234567890" target="_blank" style="color:#FF6700; text-decoration:none;">+62 812 3456 7890 (WhatsApp)</a>
+                    </p>
+                </div>
+                <div style="margin-bottom:24px;">
+                    <h4 style="margin-bottom:8px; color:#0A2342;">Email</h4>
+                    <p style="margin:0;">
+                        <a href="mailto:info@queennatasamandiri.com" style="color:#FF6700; text-decoration:none;">info@queennatasamandiri.com</a><br>
+                        <a href="mailto:project@queennatasamandiri.com" style="color:#FF6700; text-decoration:none;">project@queennatasamandiri.com</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom:8px; color:#0A2342;">Jam Operasional</h4>
+                    <p style="margin:0; color:#FF6700">Senin - Jumat: 08:00 - 17:00<br>Sabtu: 08:00 - 12:00</p>
+                </div>
+            </div>
+            <div class="contact-social" style="flex:1 1 260px; min-width:220px; max-width:320px; background:#fff; border-radius:16px; padding:32px 24px; box-shadow:0 2px 16px rgba(0,0,0,0.06); display:flex; flex-direction:column; align-items:center; justify-content:center;">
+                <h4 style="margin-bottom:16px; color:#0A2342;">Media Sosial</h4>
+                <div class="social-links" style="display:flex; flex-direction:column; gap:14px; align-items:center;">
+                    <a href="https://instagram.com/queen.natasya" target="_blank" style="color:#FF6700; font-weight:600; text-decoration:none; display:flex; align-items:center; gap:8px;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="20" style="vertical-align:middle;"> Instagram
+                    </a>
+                    <a href="https://linkedin.com/company/queen-natasya-mandiri" target="_blank" style="color:#0A2342; font-weight:600; text-decoration:none; display:flex; align-items:center; gap:8px;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" width="20" style="vertical-align:middle;"> LinkedIn
+                    </a>
+                    <a href="https://facebook.com/queennatasyamandiri" target="_blank" style="color:#1877f3; font-weight:600; text-decoration:none; display:flex; align-items:center; gap:8px;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" width="20" style="vertical-align:middle;"> Facebook
+                    </a>
+                    <a href="https://tiktok.com/@queen.natasya" target="_blank" style="color:#000; font-weight:600; text-decoration:none; display:flex; align-items:center; gap:8px;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" width="20" style="vertical-align:middle;"> TikTok
+                    </a>
+                    <a href="https://queennatasamandiri.com" target="_blank" style="color:#FF6700; font-weight:600; text-decoration:none; display:flex; align-items:center; gap:8px;">
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/internetarchive.svg" alt="Website" width="20" style="vertical-align:middle;"> Website
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center; margin-top:32px;">
+            <a href="https://wa.me/6281234567890" target="_blank" class="cta-button" style="font-size:1.1rem; padding:14px 36px;">Hubungi Sekarang</a>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PT. Queen Natasya Mandiri. Semua hak dilindungi. Membangun dengan integritas dan inovasi.</p>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
